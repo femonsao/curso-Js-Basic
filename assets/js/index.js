@@ -75,9 +75,33 @@ for (let i = 0; i <= 10; i++) {
     
 }
 
+//funções
 
+function calc(x1, x2 , operator){
 
+    return eval(`${x1} ${operator} ${x2}`);
 
+}
+let resultado = calc(5,2 , "+");
 
+console.log(resultado);
+
+//função anonima ,  feita e envocada logo apos , sem nome 
+(function calc(x1, x2 , operator){
+
+    return eval(`${x1} ${operator} ${x2}`);
+
+})(5,2,"-");//apos o ; não tem como envocala mais 
+
+//arrow function
+
+let calcc = (x1, x2 , operator) =>{
+
+    return eval(`${x1} ${operator} ${x2}`);
+
+}
+let results = calcc(5,52 , "+");
+
+console.log(results);
 
 
