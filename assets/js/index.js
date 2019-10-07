@@ -1,3 +1,5 @@
+/*
+
 // Heloo word JavaScript
 console.log("Hello Word"); 
 
@@ -61,10 +63,11 @@ switch (cor1 = "azul") {
                 console.log("erro!");
                 break;
 }
-
+*/
 /*for (sabe quantas vezes você vai repetir(3 instruções) percorrer um array (for each) 
 percorrer atributos de objetos (for in) || wile ou do wile) */
 
+/*
 let n = 8; 
 
 for (let i = 0; i <= 10; i++) {
@@ -105,3 +108,74 @@ let results = calcc(5,52 , "+");
 console.log(results);
 
 
+*/
+ 
+//eventos em JS
+
+/*
+window.addEventListener('focus', event => {
+
+    console.log("focus");
+
+});
+document.addEventListener('click', event =>{
+
+    console.log("você clicou");
+
+
+});
+
+*/
+
+//usando date 
+
+// let agora = new Date();
+
+// console.log(agora.toLocaleDateString("pt-BR"), agora.getHours(), agora.getMinutes(), agora.getSeconds());
+
+//array
+
+// let carro = ["palio 98" , "toro", "uno" , 10, true, new Date(), function(){}];
+
+// console.log(carro[5]);
+
+
+//Atributos e metodos criando uma classe
+
+// let celular = function(){
+
+//     this.cor = "prata";
+
+//     this.ligar = function()
+//     {
+
+//         console.log("uma ligação");
+
+//         return "Ligando";
+
+//     }
+// }
+
+// let objeto = new  celular();
+
+// console.log(objeto.ligar());
+
+//criando uma classe no novo ectma
+
+class celular{
+
+    constructor(){
+         this.cor = "prata";
+    }
+    ligar(){
+
+        console.log("uma ligação");
+
+                return "Ligando";
+        }
+
+}
+
+let objeto = new  celular();
+
+console.log(objeto);
